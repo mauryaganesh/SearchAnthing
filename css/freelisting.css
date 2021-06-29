@@ -1,0 +1,12 @@
+.form-bg {
+  margin-bottom: 21px;
+  margin-top: 16px;
+  background-color: initial;
+  border-color: rgb(139, 129, 114);
+  width: 100%;
+  background: url(../image/form-bg.png) repeat;
+  /* background-color: #85858500; */
+  border: #030303 solid 1px;
+  padding: 15px 10px 25px 20px;
+
+}

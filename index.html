@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Search Anything</title>
+    <link rel="icon" href="image/logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400|Ubuntu&display=swap" rel="stylesheet">
+
+  <!--CSS Stylesheets-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Font Awesome Script-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script>
+
+  <!--Bootstrap Scripts-->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Ttile Section -->
+    <section id="section-0">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light navbar-color fixed-top">
+                <a class="navbar-brand" href="index.html"><img src="image/logo.png" class="logo-image"></a>
+                <button class="navbar-toggler navbar-toggler-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            
+                            <a class="nav-link font-weight-bold" href="index.html"><img src="image/home.png" class="navbar-img-icon">Home</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link font-weight-bold" href="freelisting.html">Free Listing</a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="image/service.png" class="navbar-img-icon">Services   
+                            </a>
+                                <div class="dropdown-menu">
+                                    <a class="nav-link" href="property.html">Property</a>
+                                    <a class="nav-link" href="rental.html">Rental</a>
+                                    <a class="nav-link" href="pg.html">Buy PG</a>
+                                    <a class="nav-link" href="packersmovers.html">Packers and Movers</a>
+                                    <a class="nav-link" href="domesticservics.html">Domestic Help Services</a>
+                                    <a class="nav-link" href="homeappliance.html">Home Appliances Repair and Services</a>
+                                    <a class="nav-link" href="furniture.html">Furniture Dealers</a>
+                                    <a class="nav-link" href="plumber.html">Plumbing Contractor and Dealers</a>
+                                </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" href="#contact-us"><img src="image/contact.png" class="navbar-img-icon">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <button class="btn btn-primary btn-sm login-button" data-toggle="modal" data-target="#myModal">
+                                Login
+                            </button> -->
+                            <a class="nav-link font-weight-bold" data-toggle="modal" onclick="document.getElementById('id01').style.display='block'"><img src="image/login.png" class="navbar-img-icon">Login</a>
+
+                            <div id="id01" class="modal signin-modal">
+                                <form class="modal-content" action="homeappliance.html" method="POST">
+                                    <div class="container signin-container">
+
+                                        <label><b>Email</b></label>
+                                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                                        <label><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+                                        <input type="checkbox"> Remember me
+                                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                                        <div class="clearfix">
+                                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                            <button type="submit" class="signinbtn">Signin</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                            <li class="nav-item">
+                                <!-- <button class="btn btn-primary btn-sm login-button" data-toggle="modal" data-target="#myModal1">
+                                    Sign Up
+                                </button> -->
+                                <a class="nav-link font-weight-bold" data-toggle="modal" onclick="document.getElementById('id02').style.display='block'"><img src="image/login.png" class="navbar-img-icon">Sign Up</a>
+
+                                <div id="id02" class="modal signup-modal">
+                                    <form class="modal-content" action="homeappliance.html" method="POST">
+                                        <div class="container signup-container">
+
+                                          <label><b>First Name</b></label>
+                                          <input type="text" placeholder="Enter First Name" name="first-name" required>
+
+                                          <label><b>Last Name</b></label>
+                                          <input type="text" placeholder="Enter Last Name" name="last-name" required>
+
+                                            <label><b>Email</b></label>
+                                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                                            <label><b>Password</b></label>
+                                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                            <label><b>Repeat Password</b></label>
+                                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                            <input type="checkbox"> Remember me
+                                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                                            <div class="clearfix">
+                                                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                                                <button type="submit" class="signupbtn">Sign Up</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold" href="aboutus.html"><img src="image/information.png" class="navbar-img-icon">About Us</a>
+                            </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="image/en.png" class="english-logo">Eng</a>
+                                    <div class="dropdown-menu">
+                                        <a class="nav-link font-weight-bold" href="#">Hindi</a>
+                                    </div>
+                            </li>
+                    </ul>
+                </div>    
+             </nav>
+        </div>
+    </section>
+
+
+    <!-- Section 2 -->
+
+    <section id="section-2">
+                    <div id="carousel-one" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                          <li data-target="#carousel-one" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-one" data-slide-to="1"></li>
+                          <!-- <li data-target="#carousel-one" data-slide-to="2"></li>
+                          <li data-target="#carousel-one" data-slide-to="3"></li> -->
+                        </ul>
+                      
+                        <!-- The slideshow -->
+                        <div class="carousel-inner carousel-height">
+                          <div class="carousel-item active">
+                            <img src="image/jdmart-banner.webp" class="carousel-image" alt="carousel-image"> 
+                          </div>
+                          <div class="carousel-item">
+                            <img src="image/Flights.webp" class="carousel-image" alt="carousel-image">
+                          </div>
+                          <!-- <div class="carousel-item">
+                            <img src="image/outdoor.jpg" class="carousel-image" alt="carousel-image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="image/woman-smile.jpg" class="carousel-image" alt="carousel-image">
+                          </div> -->
+                        </div>
+                      
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#carousel-one" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-one" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      
+                    </div>        
+    </section>
+
+    <!-- Search Bar Section -->
+
+    <section id="search-bar">
+        <div class="mask d-flex align-items-center h-100">
+          <div class="container">
+            <div class="card">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <div id="basic" class="form-outline">
+                      <input type="text" id="form1" class="form-control form-control-lg" placeholder="Search for anything, anywhere in India"/>
+                      <label class="form-label" for="form1">What are you looking for?</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div id="location" class="form-outline">
+                      <input type="text" id="form2" class="form-control form-control-lg search-background" placeholder="Delhi"/>
+                      <label class="form-label" for="form2">Location</label>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <input class="btn btn-secondary btn-block btn-lg" type="submit" value="Search"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </section>
+
+    <!-- Section 3 -->
+
+    <!-- <section id="section-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class="row">
+                <div class="col-md-2">
+                  <i class="fas fa-truck fa-2x mt-2"></i>
+                </div>
+                <div class="col-md-10">
+                  <h5 class="section-3-h">On Demand Service</h5>
+                  <p class="section-3-p">Find the best services here</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-4 col-sm-12">
+              <div class="row">
+                <div class="col-md-2">
+                  <i class="fas fa-dollar-sign fa-2x mt-2"></i>
+                </div>
+                <div class="col-md-10">
+                  <h5 class="section-3-h">Value For Money</h5>
+                  <p class="section-3-p">Find the best deals here</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-4 col-sm-12">
+              <div class="row">
+                <div class="col-md-2">
+                    <i class="fas fa-smile fa-2x mt-2"></i>
+                </div>
+                <div class="col-md-10">
+                  <h5 class="section-3-h">Online Support 24/7</h5>
+                  <p class="section-3-p">24 Hours Support Service</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+  
+        </div>
+    </section> -->
+
+    <!-- Freelisting Services -->
+
+    <section id="freelisting">
+      <div id="freelisting-id">
+        <a href="freelisting.html">Free Listing</a>
+      </div>
+    
+    </section>
+
+    <!-- Section 4 -->
+
+    <section id="section-4">
+        <div class="container">
+            <h2 class="section-4-h">Services</h2>
+            <h5 class="section-4-p">General Services</h5>
+            <div class="row section-4-box">
+                <div class="col-lg-4 col-md-4 col-sm-12 ipad-view mobile-view p-2 section-4-columns">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row card-mobile-view">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <h6>Property Services</h6>
+                                    <a href="#"><p class="text-secondary">Book Now</p></a>
+                                    <a href="#"><p class="text-secondary">Trending</p></a>
+                                    <a href="#"><p class="text-secondary">Login</p></a>
+                                    <a href="#"><p class="text-secondary">Read More</p></a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <img src="image/property.jpg" class="section-4-img img-fluid">
+                                </div>
+                            </div>
+                            <a href="property.html" class="stretched-link"></a>                       
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 ipad-view mobile-view p-2 section-4-columns">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="image/rental.jpg" class="section-4-img">
+                                </div>
+                                <div class="col-md-6">
+                                    <h6>Rental Services</h6>
+                                    <a href="#"><p class="text-secondary">Orders History</p></a>
+                                    <a href="#"><p class="text-secondary">Advanced Search</p></a>
+                                    <a href="#"><p class="text-secondary">Login</p></a>
+                                    <a href="#"><p class="text-secondary">Read More</p></a>
+                                </div>
+                            </div>
+                            <a href="rental.html" class="stretched-link"></a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 ipad-view mobile-view p-2 section-4-columns">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>PG Services</h6>
+                                    <a href="#"><p class="text-secondary">Orders History</p></a>
+                                    <a href="#"><p class="text-secondary">Advanced Search</p></a>
+                                    <a href="#"><p class="text-secondary">Login</p></a>
+                                    <a href="#"><p class="text-secondary">Read More</p></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="image/pg.jpeg" class="section-4-img">
+                                </div>
+                            </div>
+                            <a href="pg.html" class="stretched-link"></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="section-4-p pt-3">Home Services</h5>
+            <div class="row section-4-box">
+                <div class="col-md-4 col-sm-4 ipad-view mobile-view p-2 section-4-columns">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="image/packers.jpg" class="section-4-img">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <h6>Packers and Movers</h6>
+                                    <a href="#"><p class="text-secondary">Home Relocation</p></a>
+                                    <a href="#"><p class="text-secondary">Office Relocation</p></a>
+                                    <a href="#"><p class="text-secondary">Car Carriers</p></a>
+                                    <a href="#"><p class="text-secondary">More...</p></a>
+                                </div>
+                            </div>
+                            <a href="packersmovers.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 ipad-view mobile-view p-2 section-4-columns">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <h6>Domestic Help Services</h6>
+                                  <a href="#"><p class="text-secondary">Housemaid</p></a>
+                                  <a href="#"><p class="text-secondary">Cook</p></a>
+                                  <a href="#"><p class="text-secondary">Nanny/Ayah</p></a>
+                                  <a href="#"><p class="text-secondary">More...</p></a>
+                              </div>
+                              <div class="col-md-6">
+                                  <img src="image/domestic-services.jpg" class="section-4-img">
+                              </div>
+                          </div>
+                          <a href="domesticservics.html" class="stretched-link"></a> 
+                      </div>
+                  </div>
+              </div>
+
+                <div class="col-md-4 col-sm-4 ipad-view mobile-view p-2 section-4-columns">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="image/homeappliances.png" class="section-4-img">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <h6>Home Appliances Repair & Services</h6>
+                                    <a href="#"><p class="text-secondary">AC Repair</p></a>
+                                    <a href="#"><p class="text-secondary">TV Repair</p></a>
+                                    <a href="#"><p class="text-secondary">Fridge Repair</p></a>
+                                    <a href="#"><p class="text-secondary">More...</p></a>
+                                </div>
+                            </div>
+                            <a href="homeappliance.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 ipad-view mobile-view col-sm-12 p-2 section-4-columns">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-3">
+                                    <h6>Furniture Dealer Services</h6>
+                                    <a href="#"><p class="text-secondary">Home Furniture</p></a>
+                                    <a href="#"><p class="text-secondary">Office Furniture</p></a>
+                                    <a href="#"><p class="text-secondary">New Arrivals</p></a>
+                                    <a href="#"><p class="text-secondary">More...</p></a>
+                                </div>
+                                <div class="col-md-6 col-sm-3">
+                                    <img src="image/fur3.jpg" class="section-4-img">
+                                </div>
+                            </div>
+                            <a href="furniture.html" class="stretched-link"></a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 ipad-view mobile-view p-2 section-4-columns">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <img src="image/plum6.jpg" class="section-4-img">
+                              </div>
+                              <div class="col-md-6">   
+                                  <h6>Plumbing Contractor Dealers</h6>
+                                  <a href="#"><p class="text-secondary">Fix Clogging</p></a>
+                                  <a href="#"><p class="text-secondary">Boiler Repair</p></a>
+                                  <a href="#"><p class="text-secondary">Roofing Service</p></a>
+                                  <a href="#"><p class="text-secondary">More...</p></a>
+                              </div>
+                          </div>
+                          <a href="plumber.html" class="stretched-link"></a> 
+                      </div>
+                  </div>
+              </div>
+
+                <div class="col-md-4 col-sm-4 ipad-view mobile-view p-2 section-4-columns">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Dealers</h6>
+                                    <a href="#"><p class="text-secondary">Orders History</p></a>
+                                    <a href="#"><p class="text-secondary">Advanced Search</p></a>
+                                    <a href="#"><p class="text-secondary">Dealing</p></a>
+                                    <a href="#"><p class="text-secondary">Read More</p></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="image/dealer.jpg" class="section-4-img">
+                                </div>
+                            </div>
+                            <a href="#" class="stretched-link"></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section 6 -->
+
+      <!-- <section id="section-6">
+
+            <div class="contact-form">
+                <div class="container">
+                 <form>
+                  <div class="row">
+                   <div class="col-lg-3 col-md-3 col-sm-12">
+                     <h1>Get in Touch</h1> 
+                   </div>
+                   <div class="col-lg-9 col-md-9 col-sm-12 right">
+                      <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control form-control-lg" placeholder="Your email@email.com" name="email">
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control form-control-lg">
+                         
+                        </textarea>
+                      </div>
+                      <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+                   </div>
+                  </div>
+                 </form>
+                </div>
+               </div>
+
+      </section> -->
+
+      <!-- Contact Us -->
+      
+      <section id="contact-us">
+        <div class="container">
+        <h1 class="contact-us-h">Contact Us</h1>
+        <div class="row">
+            <div class="col-md-6">
+              <iframe class="mt-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15130.82267323403!2d77.21077205905144!3d28.62044096755271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2b22f54e933%3A0xdbb170ad13258066!2sParliament%20Of%20India!5e0!3m2!1sen!2sin!4v1617191507763!5m2!1sen!2sin"
+                  width="100%" height="395px" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="col-md-6">
+                <form class="my-form" action="/action.php">
+                    <div class="form-group">
+                        <label for="form-name">Name</label>
+                        <input type="text" class="form-control" id="form-name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email">Email Address</label>
+                        <input type="email" class="form-control" id="form-email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-subject">Telephone</label>
+                        <input type="text" class="form-control" id="form-subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Email your Message</label>
+                        <textarea class="form-control" id="form-message" placeholder="Message"></textarea>
+                    </div>
+                    <button class="btn btn-default" type="submit">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+ 
+      <!-- Advertisement Section -->
+
+      <section id="advertisement-bar">
+        <div class="container">
+            <h4 class="advertisement-h">Advertisement Bar</h4>
+            <div class="row advertisement-row">
+                
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5">
+                
+                    <div id="carousel-10" class="carousel slide" data-ride="carousel" data-interval="3000">
+                       
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel-10" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-10" data-slide-to="1"></li>
+                          <li data-target="#carousel-10" data-slide-to="2"></li>
+                        </ol>
+                       
+                        <div class="carousel-inner" role="listbox">
+                
+                          <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="image/421.jpg" alt="slide">
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <img class="d-block img-fluid" src="image/422.jpg" alt="slide">
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <img class="d-block img-fluid" src="image/423.jpg" alt="slide">
+                          </div>
+    
+                        </div>
+                        
+                        <a class="carousel-control-prev" href="#carousel-10" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">prev</span>
+                        </a>
+                        
+                        <a class="carousel-control-next" href="#carousel-10" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">next</span>
+                        </a>
+                        
+                    </div>
+                
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5">
+                
+                    <div id="carousel-11" class="carousel slide" data-ride="carousel" data-interval="3000">
+                       
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel-11" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-11" data-slide-to="1"></li>
+                          <li data-target="#carousel-11" data-slide-to="2"></li>
+                        </ol>
+                       
+                        <div class="carousel-inner" role="listbox">
+                
+                          <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="image/422.jpg" alt="slide">
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <img class="d-block img-fluid" src="image/421.jpg" alt="slide">
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <img class="d-block img-fluid" src="image/423.jpg" alt="slide">
+                          </div>
+    
+                        </div>
+                        
+                        <a class="carousel-control-prev" href="#carousel-11" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">prev</span>
+                        </a>
+                        
+                        <a class="carousel-control-next" href="#carousel-11" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">next</span>
+                        </a>
+                        
+                    </div>
+                
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5">
+                
+                    <div id="carousel-12" class="carousel slide" data-ride="carousel" data-interval="3000">
+                       
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel-12" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-12" data-slide-to="1"></li>
+                          <li data-target="#carousel-12" data-slide-to="2"></li>
+                        </ol>
+                       
+                        <div class="carousel-inner" role="listbox">
+                
+                          <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="image/423.jpg" alt="slide">
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <img class="d-block img-fluid" src="image/422.jpg" alt="slide">
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <img class="d-block img-fluid" src="image/421.jpg" alt="slide">
+                          </div>
+    
+                        </div>
+                        
+                        <a class="carousel-control-prev" href="#carousel-12" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">prev</span>
+                        </a>
+                        
+                        <a class="carousel-control-next" href="#carousel-12" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">next</span>
+                        </a>
+                        
+                    </div>
+                
+                </div>
+                
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5">
+                
+                    <div id="carousel-13" class="carousel slide" data-ride="carousel" data-interval="3000">
+                       
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel-13" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel-13" data-slide-to="1"></li>
+                          <li data-target="#carousel-13" data-slide-to="2"></li>
+                        </ol>
+                       
+                        <div class="carousel-inner" role="listbox">
+                
+                          <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="image/422.jpg" alt="slide">
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <img class="d-block img-fluid" src="image/423.jpg" alt="slide">
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <img class="d-block img-fluid" src="image/421.jpg" alt="slide">
+                          </div>
+    
+                        </div>
+                        
+                        <a class="carousel-control-prev" href="#carousel-13" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">prev</span>
+                        </a>
+                        
+                        <a class="carousel-control-next" href="#carousel-13" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">next</span>
+                        </a>
+                        
+                    </div>
+                
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section id="footer">
+      <div class="row">
+        <div class="col-md-3 footer-brand animated fadeInLeft">
+          <h2>Searchanything</h2>
+              <p>Searchanything.com provides best local search services.<p class="none">The services aim at making several day to day task conveniently actionable and accessible to users through one webpage.</p> </p>
+              <p>© 2021 Searchanything, All rights reserved</p>
+          </div>
+        <div class="col-md-4 footer-nav">
+          <h4 class="none">Menu</h4>
+          <div class="row">
+              <div class="col-md-6">
+                  <ul class="pages none">
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Freelisting</a></li>
+                      <li><a href="#">Advertisement</a></li>
+                      <li><a href="#">Language</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6 nav-about">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 footer-social animated fadeInDown">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Linkedin</a></li>
+              </ul>
+          </div>
+        <div class="col-md-3 footer-ns animated fadeInRight">
+            <h4> Subscribe Newsletter</h4>
+              <p>Get all the latest information on Services. Subscribe for newsletter today.</p>
+              <p>
+                <div class="input-group">
+                  <input type="text" class="form-control footer-input" placeholder="Email address">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Submit</button>
+                  </span>
+                </div>
+               </p>
+          </div>
+      </div>
+  </section>
+    
+</body>
+</html>

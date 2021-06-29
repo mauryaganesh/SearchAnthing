@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Packers & Movers</title>
+    <link rel="icon" href="image/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <!--CSS Stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/packersmovers.css">
+
+    <!--Font Awesome Script-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script>
+
+    <!--Bootstrap Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+ <!-- Ttile Section -->
+ <section id="section-0">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light navbar-color fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="image/logo.png" class="logo-image"></a>
+            <button class="navbar-toggler navbar-toggler-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link font-weight-bold" href="index.html"><img src="image/home.png" class="navbar-img-icon">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="freelisting.html">Free Listing</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="image/service.png" class="navbar-img-icon">Services   
+                        </a>
+                            <div class="dropdown-menu">
+                                <a class="nav-link" href="property.html">Property</a>
+                                <a class="nav-link" href="rental.html">Rental</a>
+                                <a class="nav-link" href="pg.html">Buy PG</a>
+                                <a class="nav-link" href="packersmovers.html">Packers and Movers</a>
+                                <a class="nav-link" href="domesticservics.html">Domestic Help Services</a>
+                                <a class="nav-link" href="homeappliance.html">Home Appliances Repair and Services</a>
+                                <a class="nav-link" href="furniture.html">Furniture Dealers</a>
+                                <a class="nav-link" href="plumber.html">Plumbing Contractor and Dealers</a>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#contact-us"><img src="image/contact.png" class="navbar-img-icon">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <button class="btn btn-primary btn-sm login-button" data-toggle="modal" data-target="#myModal">
+                            Login
+                        </button> -->
+                        <a class="nav-link font-weight-bold" data-toggle="modal" onclick="document.getElementById('id01').style.display='block'"><img src="image/login.png" class="navbar-img-icon">Login</a>
+
+                        <div id="id01" class="modal signin-modal">
+                            <form class="modal-content" action="homeappliance.html" method="POST">
+                                <div class="container signin-container">
+
+                                    <label><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                                    <label><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                    <input type="checkbox"> Remember me
+                                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                                    <div class="clearfix">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                        <button type="submit" class="signinbtn">Signin</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+
+                        <li class="nav-item">
+                            <!-- <button class="btn btn-primary btn-sm login-button" data-toggle="modal" data-target="#myModal1">
+                                Sign Up
+                            </button> -->
+                            <a class="nav-link font-weight-bold" data-toggle="modal" onclick="document.getElementById('id02').style.display='block'"><img src="image/login.png" class="navbar-img-icon">Sign Up</a>
+
+                            <div id="id02" class="modal signup-modal">
+                                <form class="modal-content" action="homeappliance.html" method="POST">
+                                    <div class="container signup-container">
+
+                                      <label><b>First Name</b></label>
+                                      <input type="text" placeholder="Enter First Name" name="first-name" required>
+
+                                      <label><b>Last Name</b></label>
+                                      <input type="text" placeholder="Enter Last Name" name="last-name" required>
+
+                                        <label><b>Email</b></label>
+                                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                                        <label><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <label><b>Repeat Password</b></label>
+                                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                        <input type="checkbox"> Remember me
+                                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                                        <div class="clearfix">
+                                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                                            <button type="submit" class="signupbtn">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" href="aboutus.html"><img src="image/information.png" class="navbar-img-icon">About Us</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="image/en.png" class="english-logo">Eng</a>
+                                <div class="dropdown-menu">
+                                    <a class="nav-link font-weight-bold" href="#">Hindi</a>
+                                </div>
+                        </li>
+                </ul>
+            </div>    
+         </nav>
+    </div>
+</section>
+
+
+    <section id="head-section">
+        <div class="container-fluid head-section-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 head-section-column">
+                    <h4 class="head-section-h">Welcome to The Packers & Movers</h4>
+                    <p class="head-section-p">Packers & Movers is the reputed name among the online directories of India where people can find registered team
+                        of Packers and Movers in cities across India. This online directory is a one-stop destination
+                        for Indian people to find professional movers and packers at reasonable price point.
+                        Here on this website, people can benefit free online quotations for home or office relocation purposes.
+                        Get hold of a large list of packing and moving company along with their contact address.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="bgcolor form-bg">
+                        <div class="form-center newfm">
+                            <span class="yellow-text">Get a Free Moving Quote</span>
+                            <div class="frm-cntr">
+                                <form class="form-inline" action="/Enquiry/Enquiry.aspx" method="post" name="form" onsubmit="return validateForm()">
+                                    <div class="form-group"><input class="form-control" id="name" name="name" placeholder="Name:"></div>
+                                    <div class="form-group"><input class="form-control" id="email" name="email" placeholder="E-Mail:"></div>
+                                    <div class="form-group"><input class="form-control" id="Phone" name="Phone" placeholder="Mobile No:"></div>
+                                    <div class="form-group"><input class="form-control hasDatepicker" id="date" name="date" placeholder="Date of Relocation:" autocomplete="off"></div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="MoveType" name="MoveType">
+                                            <option value="">Move Type</option>
+                                            <option value="Within City">Within City</option>
+                                            <option value="Outside City">Outside City</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="MoveSize" name="MoveSize">
+                                            <option value="">Move Size</option>
+                                            <option value="Few items">Few items</option>
+                                            <option value="1 BHK">1 BHK</option>
+                                            <option value="2 BHK">2 BHK</option>
+                                            <option value="3+ BHK">3+ BHK</option>
+                                            <option value="Office">Office</option>
+                                            <option value="Vehicles">Vehicles</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="frm" name="frm" placeholder="Relocation From:" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="to" name="to" placeholder="Relocation To" class="form-control">
+                                    </div>
+                                    <textarea class="form-control" rows="1" id="comment" name="comment" placeholder="Please mention all items you would like to move?" spellcheck="false" style="margin-top: 0px; margin-bottom: 10px; height: 39px; width:98%"></textarea>        
+                                    
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+        
+        
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services">
+        <div class="container">
+            <h4 class="service-section-h">Our Services</h4>
+            <div class="row services-box">
+                <div class="col-md-4">
+                    <div class="card service-card-color">
+                        <div class="card-body">
+                            <img src="image/ser-icon-1.png" alt="">
+                            <h5>Home Relocation</h5>
+                            <p>There a number of reasons when people need to relocate their home.
+                                Obviously, they would want to move their household belongings safely.
+                                Hiring home relocation services would ensure easier and..</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-dark">Read More</button>   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card service-card-color">
+                        <div class="card-body">
+                            <img src="image/ser-icon-2.png" alt="">
+                            <h5>Office Relocation</h5>
+                            <p>You may need to do office relocation for various reasons.
+                                One of the common reasons for growing business is need for space to expand and better 
+                                infrastructure facilities.
+                                You may be planning to shift...</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-dark">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card service-card-color">
+                        <div class="card-body">
+                            <img src="image/ser-icon-3.png" alt="">
+                            <h5>Car Carriers</h5>
+                            <p>Transporting your vehicle to new region is not a simple task, thus you need professionals 
+                                assistance in terms of relocating your vehicle form one city or country to another. You car is an...</p>
+                        </div>
+                        <br>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-dark">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Freelisting Services -->
+
+    <section id="freelisting">
+        <div id="freelisting-id">
+          <a href="freelisting.html">Free Listing</a>
+        </div>
+      
+      </section>
+
+      <!-- Search Section -->
+
+    <section id="search-section">
+        <div class="container">
+            <div class="row search-section-row">
+                <div class="col-md-12">
+                    <h4 class="search-section-h">Search Packers and Movers For Safe Shifting</h4>
+                    <div class="search-section-form">
+                        <form style="margin:0px" name="search-box" action="">
+                            <div class="selectParent">
+                                <select id="cities">
+                                    <option value>Select City</option>
+                                    <option value="Agra">Agra</option>
+                                    <option value="Ahmedabad">Ahmedabad</option>
+                                    <option value="Allahabad">Allahabad</option>
+                                    <option value="Ajmer">Ajmer</option>
+                                    <option value="Aligarh">Aligarh</option>
+                                    <option value="Alwar">Alwar</option>
+                                    <option value="Amravati">Amravati</option>
+                                    <option value="Asansol">Asansol</option>
+                                    <option value="Ambala">Ambala</option>
+                                    <option value="Amritsar">Amritsar</option>
+                                    <option value="Aurangabad">Aurangabad</option>
+                                    <option value="Bareilly">Bareilly</option>
+                                    <option value="Bhuj">Bhuj</option>
+                                    <option value="Bilaspur">Bilaspur</option>
+                                    <option value="Bangalore">Bangalore</option>
+                                    <option value="Bhavnagar">Bhavnagar</option>
+                                    <option value="Bhopal">Bhopal</option>
+                                    <option value="Bhubaneswar">Bhubaneswar</option>                                   
+                                </select>   
+                            </div>
+                            <div class="selectParent">
+                                <select id="services">
+                                    <option value>Select Services</option>
+                                    <option value="packers-and-movers">Packers Movers by Location</option>
+                                    <option value="relocation-services">Home Relocation</option>
+                                    <option value="car-carriers">Car Carrier Service</option>
+                                    <option value="office-relocation">Office/ Corporate Relocation</option>                                   
+                                </select>
+                            </div>
+                            <input name="Ok" value="Search" type="button" id="clkbtn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section">
+        <div class="container">
+            <h4>About the Packers Movers</h4>
+            <div class="row m-2">
+                <p class="about-section-p">The Packers and Movers have come up as a digital platform to make search for
+                    Reliable Packers Movers in India an easy task than ever.</p>
+                <p class="about-section-p">This Directory would help individuals and business corporations to connect with professionals who offer services at a highly competitive price.
+                    They offer a customized range of services to help people in the relocation of households and official belongings.
+                    This assures easy relocation of goods with utmost safety and security.
+                    Many established and enlisted Packers and Movers in India also offer insurance coverage on valuable furniture
+                    and other important items.</p>
+                <p class="about-section-p">The enlisted packing and moving companies on this website are authorized and boasts a team of
+                    experienced and skilled professionals to perform relocation with latest tools and equipments.
+                    The skilled and trained professionals accomplish loading & unloading activities,
+                    assuring no damage to goods..</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+
+    <section id="footer">
+        <div class="row footer-top">
+          <div class="col-md-3 footer-brand animated fadeInLeft">
+            <h2>Searchanything</h2>
+                <p>Searchanything.com provides best local search services.<p class="none">The services aim at making several day to day task conveniently actionable and accessible to users through one webpage.</p> </p>
+                <p>© 2021 Searchanything, All rights reserved</p>
+            </div>
+          <div class="col-md-4 footer-nav">
+            <h4 class="none">Menu</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="pages none">
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Freelisting</a></li>
+                        <li><a href="#">Advertisement</a></li>
+                        <li><a href="#">Language</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 nav-about">
+                      <ul class="list">
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Contacts</a></li>
+                          <li><a href="#">Terms & Condition</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 footer-social animated fadeInDown">
+              <h4>Follow Us</h4>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                </ul>
+            </div>
+          <div class="col-md-3 footer-ns animated fadeInRight">
+              <h4> Subscribe Newsletter</h4>
+                <p>Get all the latest information on Services. Subscribe for newsletter today.</p>
+                <p>
+                  <div class="input-group">
+                    <input type="text" class="form-control footer-input" placeholder="Email address">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Submit</button>
+                    </span>
+                  </div>
+                 </p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

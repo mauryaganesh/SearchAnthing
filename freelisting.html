@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Listing</title>
+    <link rel="icon" href="image/logo.png">
+    
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400|Ubuntu&display=swap" rel="stylesheet">
+
+  <!--CSS Stylesheets-->
+  <link rel="stylesheet" href="css/freelisting.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Font Awesome Script-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script>
+
+  <!--Bootstrap Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <section id="freelisting">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="form-bg">
+                    <h4 class="text-center pt-2">Freelisting Services</h4>
+                <hr>
+                <form id="register_form">
+                    <p class=" lead text-center">List your business for <b>FREE</b> with India's local search platform.</p>
+                    <div id="alert_error_message" class="alert alert-danger collapse" role="alert">
+                        <i class="fa fa-exclamation-triangle"></i>
+                        Please check in on some of the fields below.
+                    </div>
+                    <div id="alert_sucess_message" class="alert alert-success collapse" role="alert">
+                        New user successfully created. <a href="login.html" class="alert-link">Click here to login.</a>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" maxlength="50"
+                            placeholder="Enter full name">
+                        <div id="fullname_error_message" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" id="email" name="email" maxlength="100"
+                            placeholder="Enter email">
+                        <div id="email_error_message" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="mobile">Mobile Number *</label>
+                      <input type="number" class="form-control" id="mobile" name="mobile" maxlength="100"
+                          placeholder="Enter mobile number">
+                      <div id="email_error_message" class="text-danger"></div>
+                  </div>
+                    <div class="mb-3">
+                        <label>Product Category *</label>
+                        <select name="product" id="product" class="custom-select">
+                            <option value="" hidden>Product Category</option>
+                            <option>Product 1</option>
+                            <option>Product 2</option>
+                        </select>
+                        <div id="gender_error_message" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="city">City *</label>
+                        <input type="text" class="form-control" id="city" name="city"
+                            maxlength="50" placeholder="Enter city">
+                        <div id="confirm_password_error_message" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="img">Select Image *:</label>
+                        <input type="file" id="img" name="img" accept="image/*">
+                    </div>
+                    <hr class="mb-2">
+                    <input type="hidden" name="action" id="action" value="register_user">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Register</button>
+                </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>

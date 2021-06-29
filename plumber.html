@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plumber</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/plumber.css">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400|Ubuntu&display=swap" rel="stylesheet">
+
+  <!--CSS Stylesheets-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/plumber.css">
+
+  <!--Font Awesome Script-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script>
+
+  <!--Bootstrap Scripts-->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  <!-- Ttile Section -->
+  <section id="section-0">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light navbar-color fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="image/logo.png" class="logo-image"></a>
+            <button class="navbar-toggler navbar-toggler-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link font-weight-bold" href="index.html"><img src="image/home.png" class="navbar-img-icon">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="freelisting.html">Free Listing</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="image/service.png" class="navbar-img-icon">Services   
+                        </a>
+                            <div class="dropdown-menu">
+                                <a class="nav-link" href="property.html">Property</a>
+                                <a class="nav-link" href="rental.html">Rental</a>
+                                <a class="nav-link" href="pg.html">Buy PG</a>
+                                <a class="nav-link" href="packersmovers.html">Packers and Movers</a>
+                                <a class="nav-link" href="domesticservics.html">Domestic Help Services</a>
+                                <a class="nav-link" href="homeappliance.html">Home Appliances Repair and Services</a>
+                                <a class="nav-link" href="furniture.html">Furniture Dealers</a>
+                                <a class="nav-link" href="plumber.html">Plumbing Contractor and Dealers</a>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#contact-us"><img src="image/contact.png" class="navbar-img-icon">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <button class="btn btn-primary btn-sm login-button" data-toggle="modal" data-target="#myModal">
+                            Login
+                        </button> -->
+                        <a class="nav-link font-weight-bold" data-toggle="modal" onclick="document.getElementById('id01').style.display='block'"><img src="image/login.png" class="navbar-img-icon">Login</a>
+
+                        <div id="id01" class="modal signin-modal">
+                            <form class="modal-content" action="homeappliance.html" method="POST">
+                                <div class="container signin-container">
+
+                                    <label><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                                    <label><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                    <input type="checkbox"> Remember me
+                                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                                    <div class="clearfix">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                        <button type="submit" class="signinbtn">Signin</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+
+                        <li class="nav-item">
+                            <!-- <button class="btn btn-primary btn-sm login-button" data-toggle="modal" data-target="#myModal1">
+                                Sign Up
+                            </button> -->
+                            <a class="nav-link font-weight-bold" data-toggle="modal" onclick="document.getElementById('id02').style.display='block'"><img src="image/login.png" class="navbar-img-icon">Sign Up</a>
+
+                            <div id="id02" class="modal signup-modal">
+                                <form class="modal-content" action="homeappliance.html" method="POST">
+                                    <div class="container signup-container">
+
+                                      <label><b>First Name</b></label>
+                                      <input type="text" placeholder="Enter First Name" name="first-name" required>
+
+                                      <label><b>Last Name</b></label>
+                                      <input type="text" placeholder="Enter Last Name" name="last-name" required>
+
+                                        <label><b>Email</b></label>
+                                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                                        <label><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <label><b>Repeat Password</b></label>
+                                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                        <input type="checkbox"> Remember me
+                                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                                        <div class="clearfix">
+                                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                                            <button type="submit" class="signupbtn">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" href="aboutus.html"><img src="image/information.png" class="navbar-img-icon">About Us</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="image/en.png" class="english-logo">Eng</a>
+                                <div class="dropdown-menu">
+                                    <a class="nav-link font-weight-bold" href="#">Hindi</a>
+                                </div>
+                        </li>
+                </ul>
+            </div>    
+         </nav>
+    </div>
+</section>
+
+
+<section>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="carousel-caption">
+
+                </div>
+
+                 <img src="image/prop9.jpg" height="500px" width="1400px">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<div class="here">
+<section class="search-sec">
+    <div class="container">
+        <form action="#" method="post" novalidate="novalidate">
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt" placeholder="Enter Your City">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                <option>Select Contract Type</option>
+                                <option>Fix Clogging</option>
+                                <option>Boiler Repair</option>
+                                <option>Roofing Services</option>
+                                <option>Toilet and Bathroom installation</option>
+                                <option>Sewer Blocking</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <button type="button" class="btn btn-danger wrn-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+   </div>
+</section>
+
+
+
+<div id="get-touch">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-md-offset-1">
+        <h3>Cost for your home Plumbing Contract</h3>
+        <p>Get started today and complete our form to request your free estimate</p>
+      </div>
+      <div class="col-xs-12 col-md-4 text-center"><a href="#contact" class="btn btn-custom btn-lg page-scroll">Estimate</a></div>
+    </div>
+  </div>
+</div>
+
+
+<section id="gallery bg-dark" >
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-4 mb-4">
+    <div class="card p-3">
+      <img src="image/plum1.jpg">
+      <div class="card-body">
+        <h5 class="card-title">PLumber 1</h5>
+        <p class="card-text">Rupees 1,000</p>
+       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i>Call Dealer</a>
+      </div>
+     </div>
+    </div>
+  <div class="col-lg-4 mb-4">
+  <div class="card p-3">
+      <img src="image/plum2.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Plumber 2</h5>
+        <p class="card-text">Rupees 800</p>
+       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i>Call Dealer</a>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+    <div class="card p-3">
+      <img src="image/plum3.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Plumber 3</h5>
+        <p class="card-text">Rupees 500</p>
+       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i>Call Dealer</a>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+ <div class="container">
+    <div class="row">
+    <div class="col-lg-4 mb-4">
+    <div class="card p-3">
+      <img src="image/plum4.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Plumber 4</h5>
+        <p class="card-text">Rupees 1200</p>
+       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i>Call Dealer</a>
+      </div>
+     </div>
+    </div>
+  <div class="col-lg-4 mb-4">
+  <div class="card p-3">
+      <img src="image/plum5.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Plumber 5</h5>
+        <p class="card-text">Rupees 1000</p>
+       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i>Call Dealer</a>
+      </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+    <div class="card p-3">
+      <img src="image/plum6.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Plumber 6</h5>
+        <p class="card-text">Rupees 600</p>
+       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i>Call Dealer</a>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+
+<div class="container">
+    <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
+        <h4 class="font-cond-l fg-accent lts-md mgb-10" contenteditable="false">Not Yet Convinced?</h4>
+        <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false">Read Customer Reviews</h1>
+    </div>
+    <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+        <li>
+          <img src="image/img_avatar2.png" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+          <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
+          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Vinayak Sharma</h5>
+          <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Business man-India</small>
+        </li>
+        <li>
+          <img src="image/img_avatar3.png" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+          <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
+          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Ganesh Kumar</h5>
+          <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Invesca Technology-Noida</small>
+        </li>
+        <li>
+          <img src="image/img_avatar5.png" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+          <p class="fs-110 font-cond-l" contenteditable="false">" Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. "</p>
+          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Aman Chauhan</h5>
+          <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Working In Gurgaon</small>
+        </li>
+      </ul>
+</div>
+
+<!-- Footer Section -->
+
+<section id="footer">
+  <div class="row">
+    <div class="col-md-3 footer-brand animated fadeInLeft">
+      <h2>Searchanything</h2>
+          <p>Searchanything.com provides best local search services.<p class="none">The services aim at making several day to day task conveniently actionable and accessible to users through one webpage.</p> </p>
+          <p>© 2021 Searchanything, All rights reserved</p>
+      </div>
+    <div class="col-md-4 footer-nav">
+      <h4 class="none">Menu</h4>
+      <div class="row">
+          <div class="col-md-6">
+              <ul class="pages none">
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Freelisting</a></li>
+                  <li><a href="#">Advertisement</a></li>
+                  <li><a href="#">Language</a></li>
+              </ul>
+          </div>
+          <div class="col-md-6 nav-about">
+                <ul class="list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 footer-social animated fadeInDown">
+        <h4>Follow Us</h4>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Linkedin</a></li>
+          </ul>
+      </div>
+    <div class="col-md-3 footer-ns animated fadeInRight">
+        <h4> Subscribe Newsletter</h4>
+          <p>Get all the latest information on Services. Subscribe for newsletter today.</p>
+          <p>
+            <div class="input-group">
+              <input type="text" class="form-control footer-input" placeholder="Email address">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Submit</button>
+              </span>
+            </div>
+           </p>
+      </div>
+  </div>
+</section>
+
+</body>
+</html>
